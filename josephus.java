@@ -19,3 +19,31 @@ class josephus {
         System.out.println(josephus_0(n, k));
     }
 }
+
+
+
+
+// public class Solution {
+
+//     int findTheWinner(int n, int k) {
+//         if (n == 1) return 1;  // Return 1 for the 1-based index when only one person is left
+//         return (findTheWinner(n - 1, k) + k - 1) % n + 1;  // Adjusted for 1-based indexing
+//     }
+    
+//     public static void main(String[] args) {
+//         Scanner scanner = new Scanner(System.in);
+        
+//         // System.out.print("Enter the number of people (n): ");
+//         int n = scanner.nextInt();
+        
+//         // System.out.print("Enter the step count (k): ");
+//         int k = scanner.nextInt();
+        
+//         Solution solution = new Solution();
+//         int winner = solution.findTheWinner(n, k);
+        
+//         System.out.println(winner);
+        
+//         scanner.close();
+//     }
+// }
