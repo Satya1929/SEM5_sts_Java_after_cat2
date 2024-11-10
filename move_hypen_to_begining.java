@@ -1,4 +1,4 @@
-public class move-to_begining {
+public class move_hypen_to_begining {
     
 
     static void movehypenInFront(char[] str) {
