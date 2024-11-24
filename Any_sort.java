@@ -20,3 +20,29 @@ public class Sorting {
         System.out.println("Sorted Array: " + Arrays.toString(sortedArray));
     }
 }
+
+
+
+import java.util.*;
+
+public class Any_sort { // n size array input
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        // Read the size of the array
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+
+        // Read the elements of the array
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        // Sort the array
+        Arrays.sort(arr);
+
+        // Output the sorted array
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
