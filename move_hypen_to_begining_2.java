@@ -1,4 +1,54 @@
-public class move_hypen_to_begining {
+
+public class move_hypen_to_begining_1 { //easiest code 1 using string functions
+
+    // Function to move all hyphens to the beginning of a string
+    public static String moveHyphensToBeginning(String str) 
+    {
+        return str.replaceAll("[^-]", "") + str.replaceAll("-", "") ;
+    }
+    public static void main(String[] args) {
+        String str = "a-b-c-d";
+        String result = moveHyphensToBeginning(str);
+        System.out.println(result); // ----abcd
+    }
+}
+
+
+
+
+public class move_hypen_to_begining_1 { //easiest code 2
+
+    public static String moveHyphensToBeginning(String str) {
+        // Empty StringBuilder to construct the resulting string
+        StringBuilder sb = new StringBuilder();
+        
+        // Iterate over each character in the input string
+        for (char ch : str.toCharArray()) {
+            if (ch == '-') sb.insert(0, ch); // If the character is a hyphen, insert it at the beginning
+            else sb.append(ch); // Otherwise, append the character to the end
+        }
+
+        // Convert the StringBuilder to a string 
+        return sb.toString();
+    }
+
+    public static void main(String[] args) {
+        String str = "a-b-c-d";
+        String result = moveHyphensToBeginning(str);
+        System.out.println(result); // ----abcd
+    }
+}
+
+
+
+
+
+
+
+
+
+
+public class move_hypen_to_begining_2 {//cpp way
     
 
     static void movehypenInFront(char[] str) {
